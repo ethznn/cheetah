@@ -1,0 +1,2 @@
+module CheetahHelper
+end
