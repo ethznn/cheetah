@@ -1,2 +1,9 @@
-<h1>Cheetah#index</h1>
-<p>Find me in app/views/cheetah/index.html.erb</p>
+<div class="index">
+  <div class="col-lg-12">
+    <img class="img-responsive index_logo" src="<%= image_path 'gacheetah_logo_6.png' %>" alt="">
+    <div class="intro-text">
+       <img class="img-responsive center-block" src="<%= image_path 'gacheetah_name.png' %>" alt="">
+    </div>
+    <%= link_to "START", intro_path, :method => "get", class: "btn btn-light index_button" %>
+  </div>
+</div>

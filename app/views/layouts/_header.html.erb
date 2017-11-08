@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #FFC000;"> 
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="/assets/gacheetah_logo_6.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Gacheetah
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-inverse navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="nav navbar-nav" id="navbarNavAltMarkup">
+        <li><%= link_to "intro", intro_path, id: "navbar_list", :method => "get", class: "nav-item nav-link" %></li>
+        <li><%= link_to "show", show_path, id: "navbar_list", :method => "get", class: "nav-item nav-link" %></li>
+        <li><%= link_to "make", make_path, id: "navbar_list", :method => "get", class: "nav-item nav-link" %></li>
+        <% if user_signed_in? #로그인을 했으면? %>
+          <li><%= link_to "log out", destroy_user_session_path, method: :delete, id:"navbar_list", class: "nav-item nav-link" %>
+        <% else #로그인을 안했으면 %>
+          <li><%= link_to "log in", new_user_session_path, id:"navbar_list", class: "nav-item nav-link" %>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>

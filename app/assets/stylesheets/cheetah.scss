@@ -1,3 +1,87 @@
 // Place all the styles related to the cheetah controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+    box-sizing: border-box;
+    margin: 0px;
+}
+.index img {
+    display: block;
+    margin: auto auto 20px;
+}
+.index {
+    text-align: center;
+    background: #FFC000;
+    height: 100vh;
+}
+.index div{
+    margin: 0px;
+    padding: 0px;
+}
+.index_logo{
+    padding-top: 20vh;
+}
+.index_button{
+    color: #FFC000;
+    font-weight: bold;
+    width: 20vw;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.index_button:hover {
+    background-color: #FFC000;
+    color: white;
+}
+.index_button:focus {
+    background-color: #FFC000;
+    color: white;
+}
+.index_button:visited {
+    background-color: white;
+    color: #FFC000;
+}
+.index_button:active {
+    background-color: white;
+    color: #FFC000;
+}
+
+div.navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar-brand{
+    font-weight: bold;
+    color: rgba(255, 255, 255, .9);
+}
+a#navbar_list{
+    font-weight: bold;
+    color: rgba(255, 255, 255, .8);
+}
+.navbar-dark .navbar-toggler{
+    border-color: rgba(255,255,255,0.5);
+}
+.navbar-toggler.collapsed:focus{
+    border-color: rgba(255,255,255,0.5);
+}
+
+.intro {
+    background: #FFC000;
+    margin: 0px;
+}
+.row {
+    margin: 0px;
+}
+.intro.col-lg-12.text-center{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.intro .container{
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;   
+}
+
+.intro .intro_img1, .intro_img2{
+    width: 100%;
+}
+
