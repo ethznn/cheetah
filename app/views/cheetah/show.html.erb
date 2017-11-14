@@ -1,2 +1,13 @@
 <h1>Cheetah#show</h1>
 <p>Find me in app/views/cheetah/show.html.erb</p>
+
+<div id="map" style="width:100%;height:400px;"></div>
+
+<script>
+var mapOptions = {
+    center: new naver.maps.LatLng(37.3595704, 127.105399),
+    zoom: 10
+};
+
+var map = new naver.maps.Map('map', mapOptions);
+</script>
